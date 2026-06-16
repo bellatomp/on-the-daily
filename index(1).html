@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>On the Daily by Tori & Oli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="top-banner">weekly menu drops every Sunday • prepay online • pickup + local drop-off</div>
+
+  <header class="hero">
+    <nav>
+      <div class="logo">On the Daily <span>by Tori & Oli</span></div>
+      <div class="nav-links">
+        <a href="#weekly">Weekly Menu</a>
+        <a href="#bestsellers">Best Sellers</a>
+        <a href="#order">Order</a>
+        <a href="#delivery">Pickup/Drop-off</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <p class="tag">matcha • coffee • cute weekly drinks</p>
+      <h1>Your daily drink, but prettier.</h1>
+      <p class="subtitle">
+        A luxury little café moment by Tori & Oli. Pick from the weekly menu, customize your drink,
+        pay online, and choose pickup or local drop-off.
+      </p>
+      <div class="hero-buttons">
+        <a class="button" href="#order">Order Now</a>
+        <a class="button secondary" href="#weekly">View Menu</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="bestsellers" class="bestsellers">
+      <div class="section-title">
+        <p>always available</p>
+        <h2>Best Sellers</h2>
+      </div>
+
+      <div class="cards">
+        <article class="drink-card">
+          <span>signature</span>
+          <h3>Strawberry Cloud Matcha</h3>
+          <p>Matcha, milk of choice, strawberry, vanilla, and cloud foam.</p>
+          <strong>Price coming soon</strong>
+        </article>
+        <article class="drink-card">
+          <span>classic</span>
+          <h3>Iced Vanilla Latte</h3>
+          <p>Espresso, milk of choice, vanilla syrup, and ice.</p>
+          <strong>Price coming soon</strong>
+        </article>
+        <article class="drink-card">
+          <span>cozy</span>
+          <h3>Honey Cinnamon Latte</h3>
+          <p>A sweet coffee moment with honey, cinnamon, and creamy milk.</p>
+          <strong>Price coming soon</strong>
+        </article>
+      </div>
+    </section>
+
+    <section id="weekly" class="weekly-menu">
+      <div class="section-title">
+        <p>changes weekly</p>
+        <h2>This Week’s Menu</h2>
+        <p class="subtext">Update these drinks every week based on what Tori & Oli are selling.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article>
+          <h3>Iced Matcha</h3>
+          <p>Smooth matcha over ice with your choice of milk.</p>
+          <strong>Price coming soon</strong>
+        </article>
+        <article>
+          <h3>Vanilla Matcha</h3>
+          <p>Matcha with vanilla syrup and creamy milk.</p>
+          <strong>Price coming soon</strong>
+        </article>
+        <article>
+          <h3>Strawberry Matcha</h3>
+          <p>Layered strawberry, milk, and matcha.</p>
+          <strong>Price coming soon</strong>
+        </article>
+        <article>
+          <h3>Iced Coffee</h3>
+          <p>Classic iced coffee with optional flavor add-ons.</p>
+          <strong>Price coming soon</strong>
+        </article>
+        <article>
+          <h3>Caramel Latte</h3>
+          <p>Espresso, caramel, milk, and ice.</p>
+          <strong>Price coming soon</strong>
+        </article>
+        <article>
+          <h3>Weekly Special</h3>
+          <p>A limited drink flavor announced each week.</p>
+          <strong>Price coming soon</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <div>
+        <strong>01</strong>
+        <h3>Pick your drink</h3>
+        <p>Choose from best sellers or the weekly menu.</p>
+      </div>
+      <div>
+        <strong>02</strong>
+        <h3>Customize it</h3>
+        <p>Add milk, flavors, cold foam, espresso, matcha, and notes.</p>
+      </div>
+      <div>
+        <strong>03</strong>
+        <h3>Pay online</h3>
+        <p>Apple Pay, card, or Shop Pay can be connected through Shopify.</p>
+      </div>
+      <div>
+        <strong>04</strong>
+        <h3>Pickup/drop-off</h3>
+        <p>Choose how you want to receive your order.</p>
+      </div>
+    </section>
+
+    <section id="order" class="order-section">
+      <div class="order-card">
+        <p class="tag">secure pre-order</p>
+        <h2>Place Your Order</h2>
+        <p class="order-note">
+          Customers must enter their name, phone number, pickup/drop-off choice, and pay before the order is confirmed.
+        </p>
+
+        <form id="orderForm">
+          <div class="two-col">
+            <label>
+              First and last name
+              <input id="name" type="text" placeholder="Ex: Bella Tompkins" required>
+            </label>
+            <label>
+              Phone number
+              <input id="phone" type="tel" placeholder="Ex: 305-555-1234" required>
+            </label>
+          </div>
+
+          <label>
+            Drink
+            <select id="drink" required>
+              <option value="Strawberry Cloud Matcha" data-price="8">Strawberry Cloud Matcha</option>
+              <option value="Iced Vanilla Latte" data-price="7">Iced Vanilla Latte</option>
+              <option value="Honey Cinnamon Latte" data-price="7">Honey Cinnamon Latte</option>
+              <option value="Iced Matcha" data-price="7">Iced Matcha</option>
+              <option value="Vanilla Matcha" data-price="8">Vanilla Matcha</option>
+              <option value="Weekly Special" data-price="8">Weekly Special</option>
+            </select>
+          </label>
+
+          <div class="two-col">
+            <label>
+              Size
+              <select id="size">
+                <option value="Regular" data-extra="0">Regular</option>
+                <option value="Large" data-extra="1">Large +$1</option>
+              </select>
+            </label>
+            <label>
+              Iced or hot
+              <select id="temperature">
+                <option>Iced</option>
+                <option>Hot</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Milk
+            <select id="milk">
+              <option>Whole milk</option>
+              <option>Oat milk</option>
+              <option>Almond milk</option>
+              <option>Coconut milk</option>
+              <option>No milk</option>
+            </select>
+          </label>
+
+          <label>
+            Add-ons (+$1 each)
+            <div class="checks">
+              <span><input type="checkbox" value="Vanilla" data-extra="1"> Vanilla</span>
+              <span><input type="checkbox" value="Cinnamon" data-extra="1"> Cinnamon</span>
+              <span><input type="checkbox" value="Caramel" data-extra="1"> Caramel</span>
+              <span><input type="checkbox" value="Honey" data-extra="1"> Honey</span>
+              <span><input type="checkbox" value="Cold foam" data-extra="1"> Cold foam</span>
+              <span><input type="checkbox" value="Strawberry cold foam" data-extra="1"> Strawberry cold foam</span>
+              <span><input type="checkbox" value="Extra matcha" data-extra="1"> Extra matcha</span>
+              <span><input type="checkbox" value="Extra espresso" data-extra="1"> Extra espresso</span>
+            </div>
+          </label>
+
+          <div class="two-col">
+            <label>
+              Pickup or drop-off
+              <select id="method">
+                <option>Pickup</option>
+                <option>Local drop-off</option>
+              </select>
+            </label>
+            <label>
+              Time
+              <input id="time" type="time" required>
+            </label>
+          </div>
+
+          <label>
+            Drop-off address or pickup notes
+            <input id="address" type="text" placeholder="Address, classroom, pickup spot, etc.">
+          </label>
+
+          <label>
+            Extra notes
+            <textarea id="notes" placeholder="Less ice, extra sweet, no foam, allergies, etc."></textarea>
+          </label>
+
+          <div class="total">
+            <span>Total before checkout</span>
+            <strong id="total">$8.00</strong>
+          </div>
+
+          <button type="submit">Review Order</button>
+          <button type="button" class="pay-button" id="payButton">Pay with Apple Pay / Card</button>
+          <p class="tiny-note">Real payments would be connected with Shopify Payments, Apple Pay, Shop Pay, or Stripe.</p>
+        </form>
+      </div>
+
+      <aside class="receipt" id="receipt">
+        <h3>Your order preview ♡</h3>
+        <p>Fill out the form to review your drink before payment.</p>
+      </aside>
+    </section>
+
+    <section id="delivery" class="delivery">
+      <div class="section-title">
+        <p>easy + clear</p>
+        <h2>Pickup & Drop-off</h2>
+      </div>
+      <div class="delivery-grid">
+        <div>
+          <h3>Pickup</h3>
+          <p>Pick up your drink at the selected location and time. Orders are only confirmed after payment.</p>
+        </div>
+        <div>
+          <h3>Local Drop-off</h3>
+          <p>Enter your address or drop-off spot. Tori & Oli will confirm if it is in the delivery area.</p>
+        </div>
+        <div>
+          <h3>Order Updates</h3>
+          <p>Add your phone number so you can be contacted if the time or location needs to be confirmed.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>On the Daily</h3>
+    <p>by Tori & Oli • matcha and coffee for your daily routine</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

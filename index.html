@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the Daily by Tori & Oli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="statusBanner" class="top-banner"></div>
+<header class="hero">
+  <nav><div class="logo">On the Daily <span>by Tori & Oli</span></div><div class="nav-links"><a href="#menu">Menu</a><a href="#order">Order</a><a href="#info">Pickup/Drop-off</a></div></nav>
+  <section class="hero-content"><p class="tag">weekly drinks • matcha • coffee</p><h1>Your daily drink, but prettier.</h1><p class="subtitle">A girly, minimal-luxury drink spot by Tori & Oli. Order your matcha or coffee, customize it, pay online, and choose pickup or local drop-off.</p><div class="hero-buttons"><a class="button" href="#order">Order Now</a><a class="button secondary" href="#menu">View Menu</a></div></section>
+</header>
+<main>
+<section id="menu" class="menu-section"><div class="section-title"><p>always available + weekly specials</p><h2>This Week’s Menu</h2></div><div class="menu-grid">
+<article><span>always available</span><h3>Classic Matcha</h3><p>Smooth matcha with your choice of milk. Iced or hot.</p><strong>$7</strong></article>
+<article><span>always available</span><h3>Classic Coffee</h3><p>Classic coffee with your choice of milk and add-ons. Iced or hot.</p><strong>$7</strong></article>
+<article><span>this week</span><h3>Matcha Lemonade</h3><p>A bright, refreshing matcha lemonade special.</p><strong>$7</strong></article>
+<article><span>this week</span><h3>Blueberry Coffee</h3><p>Coffee with a sweet blueberry twist.</p><strong>$7</strong></article>
+</div></section>
+<section class="bestsellers"><div class="section-title"><p>customer favorites</p><h2>Best Sellers</h2></div><div class="cards"><div><h3>Classic Matcha</h3><p>The drink that stays on the menu every week.</p></div><div><h3>Blueberry Coffee</h3><p>A cute weekly special with a soft blueberry flavor.</p></div><div><h3>Matcha Lemonade</h3><p>Bright, fresh, and perfect for sunny days.</p></div></div></section>
+<section id="order" class="order-section"><div class="order-card"><p class="tag">online preorder</p><h2>Place Your Order</h2><p class="order-note">Fill everything out first, then pay online. Orders are only confirmed after payment.</p>
+<div id="closedBox" class="closed-box hidden"><h3>We’re closed right now ♡</h3><p>Orders are turned off for now. Come back when On the Daily is open again.</p></div>
+<form id="orderForm">
+<div class="two-col"><label>First and last name<input id="customerName" type="text" placeholder="Ex: Bella Tompkins" required></label><label>Phone number<input id="phone" type="tel" placeholder="Ex: 305-555-1234" required></label></div>
+<label>Drink<select id="drink" required><option value="Classic Matcha" data-price="7">Classic Matcha — $7</option><option value="Classic Coffee" data-price="7">Classic Coffee — $7</option><option value="Matcha Lemonade" data-price="7">Matcha Lemonade — $7</option><option value="Blueberry Coffee" data-price="7">Blueberry Coffee — $7</option></select></label>
+<div class="two-col"><label>Iced or hot<select id="temperature"><option>Iced</option><option>Hot</option></select></label><label>Pickup or drop-off<select id="method"><option>Pickup</option><option>Local drop-off</option></select></label></div>
+<label>Add-ons (+$1 each)<div class="checks"><span><input type="checkbox" value="Vanilla" data-extra="1"> Vanilla</span><span><input type="checkbox" value="Cinnamon" data-extra="1"> Cinnamon</span><span><input type="checkbox" value="Caramel" data-extra="1"> Caramel</span><span><input type="checkbox" value="Honey" data-extra="1"> Honey</span><span><input type="checkbox" value="Cold foam" data-extra="1"> Cold foam</span><span><input type="checkbox" value="Oat milk" data-extra="1"> Oat milk</span><span><input type="checkbox" value="Almond milk" data-extra="1"> Almond milk</span><span><input type="checkbox" value="Extra matcha/coffee" data-extra="1"> Extra matcha/coffee</span></div></label>
+<div class="two-col"><label>Pickup/drop-off time<input id="time" type="time" required></label><label>Quantity<input id="quantity" type="number" min="1" max="10" value="1" required></label></div>
+<label>Pickup notes or drop-off address<input id="location" type="text" placeholder="Ex: pickup table, front desk, address, etc."></label>
+<label>Extra notes<textarea id="notes" placeholder="Less ice, extra sweet, allergies, etc."></textarea></label>
+<div class="total"><span>Total</span><strong id="total">$7.00</strong></div><button id="payButton" type="submit">Pay with Apple Pay / Card</button><p class="tiny-note">You’ll be taken to secure Stripe Checkout to finish payment.</p>
+</form></div><aside class="receipt" id="receipt"><h3>Your order preview ♡</h3><p>Choose your drink and add-ons to see the total before checkout.</p></aside></section>
+<section id="info" class="info"><div class="section-title"><p>how it works</p><h2>Pickup & Drop-off</h2></div><div class="info-grid"><div><strong>01</strong><h3>Fill out your order</h3><p>Add your name, phone number, drink, add-ons, and time.</p></div><div><strong>02</strong><h3>Pay online</h3><p>Use Apple Pay or card through Stripe Checkout.</p></div><div><strong>03</strong><h3>Get your drink</h3><p>Pick up or choose local drop-off when available.</p></div></div></section>
+</main><footer><h3>On the Daily</h3><p>by Tori & Oli • matcha + coffee made cute</p></footer>
+<script src="config.js"></script><script src="script.js"></script>
+</body></html>

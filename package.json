@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "echo ready"
+  },
+  "dependencies": {
+    "stripe": "^16.12.0"
+  }
+}
